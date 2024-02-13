@@ -1,0 +1,151 @@
+.BEATRICEVar{/*
+
+BEFORE YOU POST: PLEASE REPLACE "BEATRICE" IN THE CLASS NAMES WITH THE NAME OF YOUR BEATRICE, OTHERWISE IT WILL BREAK EVERYONES CODE ON THE PAGE.  LOOK AT ME.  LOOK AT ME.  THIS IS IMPORTANT AND YOU NEED TO DO THIS.  FIND AND REPLACE IN GOOGLE DOCS.  PLEASE.
+
+Anyway change fonts and colours in the section below; current setup is based on the nocturne writeup but you can like. change that to be whatever you want
+
+*/--fonttitle: Cinzel Decorative,  serif;
+--fonttitletwo: Cinzel, serif;
+--fontmain: Cormorant, serif;
+--backgroundimg: url(https://i.imgur.com/FPx8X11.png);
+--backgroundcolor: #111111;
+--imagemain: url(https://i.pinimg.com/564x/b1/51/b0/b151b0d77fbdef113891d285e8f8f2ed.jpg);
+--text: white;
+--accent: red;
+--glow: rgba(255,0,0,1);
+--padding:20px;}
+
+.BEATRICEWrap{
+font-family:var(--fontmain);
+color:var(--text);
+font-size:14px;
+}
+
+.BEATRICEWidth{
+max-width:800px;
+background-image: var(--backgroundimg);
+background-size:50%;
+height:500px;
+margin:auto;}
+
+@media screen and (max-width: 800px){
+.BEATRICEWidth{
+max-width:500px;
+background-image: var(--backgroundimg);
+background-size:50%;
+height:auto;
+margin:auto;}
+}
+
+.BEATRICEGrid{
+display:grid;
+grid-template-columns:40% 60%;
+grid-template-rows:100%;
+grid-template-areas:'LIST PROSE';
+}
+
+@media screen and (max-width: 800px){
+.BEATRICEGrid{
+display:grid;
+grid-template-columns:100%;
+grid-template-rows:500px auto;
+grid-template-areas:'LIST' 'PROSE';
+}
+}
+
+.BEATRICEList{
+grid-area: LIST;
+padding-left:40px;
+padding-top:20px;
+padding-bottom:20px;
+height:100%;
+width:100%;
+}
+
+@media screen and (max-width: 800px){
+.BEATRICEList{
+grid-area: LIST;
+padding:20px;
+height:100%;
+width:100%;
+}
+}
+
+.BEATRICEProse{
+grid-area: PROSE;
+height:500px;
+width:100%;
+overflow:auto;
+scrollbar-color: red transparent;
+scrollbar-width: thin;
+}
+
+.BEATRICEProse::-webkit-scrollbar {
+width: 1px;
+}
+
+.BEATRICEProse::-webkit-scrollbar-track {
+background-color:transparent;
+}
+
+.BEATRICEProse::-webkit-scrollbar-thumb {
+background-color:var(--accent);
+width:4px;
+border-right:3px solid rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 800px){
+.BEATRICEProse{
+grid-area: PROSE;
+height:100%;
+width:100%;
+}
+}
+
+.BEATRICEBody{
+padding-top:20px;
+padding-bottom:20px;
+padding-left:40px;
+padding-right:40px;
+text-align:justify;
+}
+
+@media screen and (max-width: 800px){
+.BEATRICEBody{
+padding-left:20px;
+padding-right:20px;
+padding-bottom:20px;
+padding-top:0px;
+text-align:justify;
+}
+}
+
+.BEATRICEImage{
+border:1px solid var(--accent);
+height:250px;
+width:200px;
+background-image:var(--imagemain);
+background-size:cover;
+background-position:center center;
+margin:auto;
+}
+
+.BEATRICETitle{
+font-family:var(--fonttitle);
+font-size:30px;
+text-shadow:0px 0px 30px var(--glow), 0px 0px 15px var(--glow);
+text-align:center;
+margin:auto;
+}
+
+.BEATRICESubtitle{
+font-size:12px;
+margin:auto;
+text-align:center;
+}
+
+.BEATRICEAccentText{
+color:var(--accent);
+font-size:17px;
+display:inline;
+}
