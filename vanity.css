@@ -1,0 +1,624 @@
+#hysteriapage{
+display:none;
+}
+
+#hysteriapagelesstoggle{
+display:none
+}
+
+.HysteriaVar{
+--dark: #111111;
+--light: #818181;
+--accent: #ED1D1D;
+--imgbackground: url(https://i.imgur.com/Y7tuOMd.png);
+--imgbackgroundpageless: url(https://i.imgur.com/dtZD43M.png);
+--padding: 15px;
+--imgone: url(https://i.imgur.com/IB1E6JJ.png);
+--imgtwo: url(https://i.imgur.com/ciwFIYS.png);
+--imgthree: url(https://i.imgur.com/2qJKutB.png);
+--imgfour: url(https://i.imgur.com/arI816x.png);
+--imgfive: url(https://i.imgur.com/1DH7X1U.png);
+--fontbody: 'Share Tech Mono', monospace;
+--fonttitleone: 'Josefin Sans', sans-serif;
+--fonttitletwo: 'Whisper', display;
+--fontwave: 'Wavefont', sans-serif;
+}
+
+.HysteriaWrap{
+max-width:600px;
+margin:auto;
+overflow:hidden;
+}
+
+.HysteriaPositionThing{
+max-width:600px;
+margin:auto;
+position:relative;
+}
+
+.HysteriaBegone{
+display:none;
+}
+
+.HysteriaVar ::selection {
+background:var(--accent);
+color:var(--dark);
+}
+
+.HysteriaVar ::-moz-selection {
+background:var(--accent);
+color:var(--dark);
+}
+
+.HysteriaVar button{
+background-color:var(--accent);
+color:var(--dark);
+height:30px;
+width:30px;
+border-radius:50%;
+border:0px solid transparent;
+}
+
+.HysteriaVar button:hover{
+background-color:var(--dark);
+color:var(--accent);
+}
+
+.HysteriaInvis{
+display:inline;
+color:transparent;
+font-size:75%;
+}
+
+.HysteriaAccent{
+display:inline;
+color:var(--accent);
+}
+
+.HysteriaPageOne{
+position:absolute;
+left:0;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaPageTwo{
+position:absolute;
+left:0;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaPageThree{
+position:absolute;
+left:0;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaPageFour{
+position:absolute;
+left:0;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaPageFive{
+position:absolute;
+left:0;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaPageSix{
+position:absolute;
+left:0;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaPageSeven{
+position:absolute;
+left:0;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaPageEight{
+position:absolute;
+left:0;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaPageNine{
+position:absolute;
+left:0;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaHidden{
+position:absolute;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+left:2000px;
+width:100%;
+}
+
+.HysteriaVisible{
+position:absolute;
+transform: translateX(-2000px);
+width:100%;
+z-index:10;
+}
+
+/*FULL RESOLUTION*/
+
+
+.HysteriaGrid{
+display:grid;
+grid-template-columns:400px 200px;
+grid-template-rows:auto;
+grid-template-areas:'MAIN BG';
+height:800px;
+width:100%;
+}
+
+.HysteriaAlignTable{
+display:initial;
+}
+
+.HysteriaGridMain{
+grid-area:MAIN;
+background-color:var(--dark);
+color:var(--light);
+height:800px;
+width:100%;
+position:relative;
+}
+
+.HysteriaGridBg{
+grid-area:BG;
+background-image:var(--imgbackground);
+background-size:cover;
+background-position:80%;
+height:100%;
+width:100%;
+position:relative;
+user-select: none;
+}
+
+.HysteriaContentGrid{
+display:grid;
+height:100%;
+width:100%;
+grid-template-columns:var(--padding) 1fr 1fr 3fr var(--padding);
+grid-template-rows:var(--padding) 1fr auto 300px auto 1fr var(--padding);
+grid-template-areas:
+'TPL TP1 TP2 TP3 TPR'
+'P1L A B C P1R'
+'P2L D E F P2R'
+'P3L G H I P3R'
+'P4L J K L P4R'
+'P5L M N O P5R'
+'BPL BP1 BP2 BP3 BPR';
+}
+
+.HysteriaTypeOneTitle{
+grid-area:E / E / E  / F;
+border-left:var(--padding) solid var(--dark);
+width:100%;
+height:100%;
+text-align:right;
+}
+
+.HysteriaTypeOneTitleAlign{
+display: flex;
+height:100%;
+justify-content: flex-end;
+align-items: flex-end;
+}
+
+.HysteriaTitleMain{
+font-family:var(--fonttitleone);
+font-size:25px;
+line-height:90%;
+text-align:right;
+}
+
+.HysteriaTitleDecoFont{
+display:inline;
+font-family:var(--fonttitletwo);
+font-size:75px;
+color:var(--accent);
+}
+
+.HysteriaTypeOneImageOne{
+grid-area: H / H / H / I;
+background-image:var(--imgone);
+background-size:140%;
+background-position:10% 40%;
+border:var(--padding) solid var(--dark);
+width:130%;
+height:100%;
+position:relative;
+z-index:6;
+}
+
+.HysteriaTypeOneImageTwo{
+grid-area: H / H / H / I;
+background-image:var(--imgtwo);
+background-size:110%;
+background-position:top center;
+border:var(--padding) solid var(--dark);
+width:130%;
+height:100%;
+position:relative;
+z-index:6;
+}
+
+.HysteriaTypeOneImageThree{
+grid-area: H / H / H / I;
+background-image:var(--imgthree);
+background-size:120%;
+background-position:30% center;
+border:var(--padding) solid var(--dark);
+width:130%;
+height:100%;
+position:relative;
+z-index:6;
+}
+
+.HysteriaTypeOneImageFour{
+grid-area: H / H / H / I;
+background-image:var(--imgfour);
+background-size:140%;
+background-position:25% 45%;
+border:var(--padding) solid var(--dark);
+width:130%;
+height:100%;
+position:relative;
+z-index:6;
+}
+
+.HysteriaTypeOneImageFive{
+grid-area: H / H / H / I;
+background-image:var(--imgfive);
+background-size:140%;
+background-position:10% 40%;
+border:var(--padding) solid var(--dark);
+width:130%;
+height:100%;
+position:relative;
+z-index:6;
+}
+
+.HysteriaTypeOneBody{
+grid-area: L;
+width:100%;
+height:100%;
+text-align:right;
+font-size:12px;
+font-family:var(--fontbody);
+font-weight:300;
+line-height:125%;
+}
+
+.HysteriaWaveform{
+font-family:var(--fontwave);
+color:var(--accent);
+font-size:30px;
+}
+
+.HysteriaTypeTwoSection{
+grid-area: F / F / L / L;
+width:100%;
+height:100%;
+}
+
+.HysteriaTypeTwoTitleHeight{
+height:calc(100% - var(--padding));
+}
+
+.HysteriaTypeTwoBody{
+padding-top:var(--padding);
+width:100%;
+height:100%;
+background-color:var(--dark);
+position:relative;
+z-index:7;
+text-align:right;
+font-size:12px;
+font-family:var(--fontbody);
+font-weight:300;
+line-height:125%;
+}
+
+.HysteriaButtonPosition{
+position:absolute;
+bottom:var(--padding);
+right:var(--padding);
+}
+
+.HysteriaButtonPrompt{
+position:absolute;
+z-index:11;
+bottom:-40px;
+right:0;
+background-color:var(--accent);
+color:var(--dark);
+font-family:var(--fonttitleone);
+padding:5px;
+user-select:none;
+}
+
+/*NARROW SCREEN*/
+
+
+@media screen and (max-width: 800px) {
+.HysteriaGrid{
+display:grid;
+height:auto;
+grid-template-columns:auto;
+grid-template-rows:auto 100px;
+grid-template-areas:'MAIN' 'BG';
+width:100%;
+min-height:800px;
+height:auto;
+}
+
+.HysteriaAlignTable{
+display:grid;
+width:100%;
+height:100%;
+place-items:center;
+}
+
+.HysteriaContentGrid{
+display:block;
+vertical-align: middle;
+margin:auto;
+height:100%;
+width:90%;
+}
+
+.HysteriaTypeOneTitle{
+height:auto;
+border-left:var(--padding) solid var(--dark);
+width:100%;
+text-align:right;
+}
+
+.HysteriaTypeOneTitleAlign{
+display:inline-block;
+height:auto;
+width:100%;
+}
+
+.HysteriaTitleMain{
+height:auto;
+font-family:var(--fonttitleone);
+font-size:25px;
+line-height:90%;
+}
+
+.HysteriaTitleDecoFont{
+height:auto;
+display:inline;
+font-family:var(--fonttitletwo);
+font-size:75px;
+color:var(--accent);
+}
+
+.HysteriaTypeOneImageOne{
+background-image:var(--imgone);
+background-size:150%;
+background-position:50% 45%;
+border:var(--padding) solid var(--dark);
+height:300px;
+width:100%;
+}
+
+.HysteriaTypeOneImageTwo{
+background-image:var(--imgtwo);
+background-size:130%;
+background-position:40% top;
+border:var(--padding) solid var(--dark);
+height:300px;
+width:100%;
+}
+
+
+.HysteriaTypeOneImageThree{
+background-image:var(--imgthree);
+background-size:140%;
+background-position:40% center;
+border:var(--padding) solid var(--dark);
+height:300px;
+width:100%;
+}
+
+.HysteriaTypeOneImageFour{
+background-image:var(--imgfour);
+background-size:150%;
+background-position:40% center;
+border:var(--padding) solid var(--dark);
+height:300px;
+width:100%;
+}
+
+.HysteriaTypeOneImageFive{
+background-image:var(--imgfive);
+background-size:150%;
+background-position:50% 45%;
+border:var(--padding) solid var(--dark);
+height:300px;
+width:100%;
+}
+
+.HysteriaTypeOneBody{
+grid-area: L;
+height:auto;
+text-align:right;
+font-size:12px;
+font-family:var(--fontbody);
+font-weight:300;
+line-height:125%;
+}
+
+.HysteriaGridBg{
+grid-area:BG;
+background-image:var(--imgbackground);
+background-size:cover;
+background-position:80%;
+height:100%;
+width:100%;
+position:relative;
+user-select:none;
+}
+
+.HysteriaButtonPosition{
+position:absolute;
+top:var(--padding);
+right:var(--padding);
+}
+
+}
+
+
+/*PAGELESS FULL RESOLUTION*/
+
+.HysteriaGridPageless{
+display:grid;
+grid-template-columns:400px 200px;
+grid-template-rows:auto;
+grid-template-areas:'MAIN BG';
+width:100%;
+}
+
+.HysteriaGridMainPageless{
+grid-area:MAIN;
+background-color:var(--dark);
+color:var(--light);
+width:100%;
+height:100%;
+position:relative;
+}
+
+.HysteriaGridBgPageless{
+grid-area:BG;
+background-image:var(--imgbackground);
+background-size:contain;
+background-position:60%;
+background-attachment:fixed;
+height:100%;
+width:100%;
+position:relative;
+user-select: none;
+}
+
+.HysteriaSectionPageless{
+background-color:var(--dark);
+z-index:8;
+}
+
+.HysteriaTypeOneBodyPageless{
+grid-area: L;
+width:100%;
+height:100%;
+text-align:right;
+font-size:12px;
+font-family:var(--fontbody);
+font-weight:300;
+line-height:125%;
+}
+
+.HysteriaTypeTwoBodyPageless{
+border-top:var(--padding) solid transparent;
+width:100%;
+height:100%;
+background-color:var(--dark);
+position:relative;
+z-index:7;
+text-align:right;
+font-size:12px;
+font-family:var(--fontbody);
+font-weight:300;
+line-height:125%;
+}
+
+.HysteriaPagelessAltStyle{
+width:300px;
+font-family:sans-serif;
+text-align:left;
+padding:10px;
+font-size:14px;
+line-height:25px;
+letter-spacing:3px;
+color:#AAAAAA
+}
+
+
+/*PAGELESS NARROW SCREEN*/
+
+
+@media screen and (max-width: 800px) {
+.HysteriaGridPageless{
+display:grid;
+grid-template-columns:auto;
+grid-template-rows: auto 150px;
+grid-template-areas: 'MAIN' 'BG';
+width:100%;
+height:auto;
+padding-top:var(--padding);
+padding-bottom:var(--padding);
+}
+
+.HysteriaGridBgPageless{
+grid-area:BG;
+background-image:var(--imgbackground);
+background-size:cover;
+background-position:80%;
+background-attachment: scroll;
+height:100%;
+width:100%;
+position:relative;
+user-select: none;
+}
+
+.HysteriaSectionPageless{
+background-color:var(--dark);
+z-index:8;
+padding-top:var(--padding);
+padding-bottom:var(--padding);
+}
+}
